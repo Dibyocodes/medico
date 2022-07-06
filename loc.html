@@ -31,8 +31,8 @@
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v11',
-            center: [79.2933576157557, 24.003178874431605],
-            zoom: 5
+            center: [88.3658643545073, 22.472939446695246],
+            zoom: 15
         });
         map.addControl(
             new MapboxGeocoder({
@@ -59,11 +59,11 @@
                                     'geometry': {
                                         'type': 'Point',
                                         'coordinates': [
-                                            88.37, 22.47
+                                        88.3604524414906, 22.475155150055418
                                         ]
                                     },
                                     'properties': {
-                                        'title': 'Mapbox DC'
+                                        'title': 'Frank Ross Pharmacy'
                                     }
                                 },
                                 {
@@ -71,18 +71,64 @@
                                     'type': 'Feature',
                                     'geometry': {
                                         'type': 'Point',
-                                        'coordinates': [-122.414, 37.776]
+                                        'coordinates': [88.36323091080351, 22.47328765259623]
                                     },
                                     'properties': {
-                                        'title': 'Mapbox SF'
+                                        'title': 'Apollo Pharmacy'
                                     }
-                                }
+                                },
+                                {
+                                    // feature for Mapbox DC
+                                    'type': 'Feature',
+                                    'geometry': {
+                                        'type': 'Point',
+                                        'coordinates': [
+                                        88.41603837361619, 22.641779425498452                                      
+                                        ]
+                                    },
+                                    'properties': {
+                                        'title': 'Frank Ross Pharmacy'
+                                    }
+                                },
+                                {
+                                    // feature for Mapbox SF
+                                    'type': 'Feature',
+                                    'geometry': {
+                                        'type': 'Point',
+                                        'coordinates': [88.39427669222725, 22.44503785518333]
+                                    },
+                                    'properties': {
+                                        'title': 'Fine Health'
+                                    }
+                                },
+                                {
+                                    // feature for Mapbox SF
+                                    'type': 'Feature',
+                                    'geometry': {
+                                        'type': 'Point',
+                                        'coordinates': [88.38311870290448, 22.464392703764442]
+                                    },
+                                    'properties': {
+                                        'title': 'Welkin'
+                                    }
+                                },
+                                {
+                                    // feature for Mapbox SF
+                                    'type': 'Feature',
+                                    'geometry': {
+                                        'type': 'Point',
+                                        'coordinates': [88.40272220571204, 22.492734578437798]
+                                    },
+                                    'properties': {
+                                        'title': 'RN Tagore'
+                                    }
+                                },
                             ]
                         }
                     });
 
                     // Add a symbol layer
-                    map.addLayer({
+                    map.addLayer({ 
                         'id': 'points',
                         'type': 'symbol',
                         'source': 'points',
