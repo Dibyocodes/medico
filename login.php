@@ -1,6 +1,6 @@
 <?php 
 session_start(); 
-include "../ll/db_conn.php";
+include "db_conn.php";
 
 if (isset($_POST['uname']) && isset($_POST['password'])) {
 
@@ -25,7 +25,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
         $pass = md5($pass);
 
         
-		$sql = "SELECT * FROM cus_users WHERE user_name='$uname' AND password='$pass'";
+		$sql = "SELECT * FROM users WHERE user_name='$uname' AND password='$pass'";
 
 		$result = mysqli_query($conn, $sql);
 
