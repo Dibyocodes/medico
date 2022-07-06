@@ -6,7 +6,7 @@
 </head>
 <body>
      <form action="signup-check.php" method="post">
-     	<h2>SIGN UP AS SHOP</h2>
+     	<h2>SIGN UP</h2>
      	<?php if (isset($_GET['error'])) { ?>
      		<p class="error"><?php echo $_GET['error']; ?></p>
      	<?php } ?>
@@ -15,7 +15,7 @@
                <p class="success"><?php echo $_GET['success']; ?></p>
           <?php } ?>
 
-          <label>Shop Name</label>
+          <label>Name</label>
           <?php if (isset($_GET['name'])) { ?>
                <input type="text" 
                       name="name" 
@@ -27,7 +27,7 @@
                       placeholder="Name"><br>
           <?php }?>
 
-          <label>Shop Owner Name</label>
+          <label>User Name</label>
           <?php if (isset($_GET['uname'])) { ?>
                <input type="text" 
                       name="uname" 
@@ -50,7 +50,7 @@
                  name="re_password" 
                  placeholder="Re_Password"><br>
 
-     	<button type="submit">Sign Up As Shop</button>
+     	<button type="submit">Sign Up</button>
           <a href="index.php" class="ca">Already have an account?</a>
      </form>
 </body>
